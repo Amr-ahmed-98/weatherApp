@@ -1,0 +1,133 @@
+:root{
+    --main-Color:#1E202B;
+    --secondary-Color:#262936;
+    --third-Color:#323544;
+    --fourth-color:#0A9AD8;
+    --header-color:#2D303D;
+    --header-second-color:#222530;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+/* Navbar */
+.navbar{
+    background-color: var(--main-Color);
+}
+.navbar-nav .active{
+    color: var(--fourth-color) !important;
+    border: 1px var(--fourth-color) solid;
+}
+/* Main Content */
+.bg-wall{
+    background-color: var(--main-Color);
+}
+.half-img{
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+}
+.bg-wall .container input::placeholder{
+    color: white;
+}
+.bg-wall input:focus::placeholder{
+    opacity: 0.5;
+    color: white;
+}
+.bg-wall input:focus,
+.footer input:focus{
+    box-shadow: none;
+    color: white;
+}
+.bg-wall input{
+    background-color: var(--secondary-Color) !important;
+    border: none;
+    color: white;
+}
+.weather-result{
+    left: 1%;
+    margin-inline:10% ;
+    margin-top: -5%;
+}
+@media (max-width:768px) {
+    .weather-result{
+        margin-top: -20%;
+    }
+}
+.weather-result .row .col-lg-4:first-child .card,
+.weather-result .row .col-lg-4:last-child .card{
+    background-color: var(--header-color) ;
+}
+.weather-result .row .col-lg-4:nth-child(2) .card{
+    background-color: var(--header-second-color);
+}
+
+/* footer */
+.footer{
+    background-color: var(--secondary-Color);
+    height: 30vh;
+}
+.footer i{
+    color: var(--fourth-color);
+}
+.footer i:hover{
+    background-color: var(--fourth-color) !important;
+    color: white;
+}
+
+/* page directory */
+.page-directory{
+    background-color: var(--main-Color);
+}
+.page-directory .content{
+    background-color: var(--header-color);
+}
+.page-directory .content span a:hover:not(.active-link){
+    text-decoration: underline !important;
+}
+/* contact-info */
+.contact-info{
+    background-color: var(--main-Color);
+}
+.contact-info .map{
+    background-color: var(--header-color);
+}
+.contact-info .map i {
+    color: var(--fourth-color);
+}
+.contact-info .map p{
+    cursor: pointer;
+}
+.contact-form input,
+.contact-form textarea{
+    background-color: var(--main-Color);
+    border-color: darkgray;
+    color: white;
+}
+
+
+.contact-form input:hover,
+.contact-form textarea:hover{
+    border-color: var(--fourth-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    background-color: var(--main-Color);
+    box-shadow: none;
+    border-color: var(--fourth-color);
+    color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: white;
+}
+.big-txt{
+    font-size: 5.7rem;
+}
+.weather-result .row .col-lg-4{
+    min-width: 350px !important;
+    min-height: 367.837px !important;
+}

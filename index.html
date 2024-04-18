@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center justify-content-center text-white" href="#">
+            <img src="images/logo@2x.png" style="width: 80px;" alt="logo" />
+            <div class="ms-3">
+              <div class="fs-5">Weather</div>
+              <div class="fs-6 text-white-50 text-center">App</div>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-sliders text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav me-5">
+              <a class="nav-link px-4  text-white active rounded-pill" aria-current="page" href="#">Home</a>
+              <a class="nav-link px-4 text-white rounded-pill" href="#">News</a>
+              <a class="nav-link px-4 text-white rounded-pill" href="#">Live Cameras</a>
+              <a class="nav-link px-4 text-white rounded-pill" href="#">Photos</a>
+              <a class="nav-link px-4 text-white rounded-pill" href="cantact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Main Content -->
+      <main>
+        <div class="bg-wall position-relative min-vh-100">
+          <div class="half-img">
+            <div class="container h-100 py-5">
+              <div class="d-flex justify-content-center align-items-center position-relative">
+                <input class="form-control form-control-lg  rounded-end-0"  type="text" id="searchInput"  placeholder="search for the location....." aria-label="form">
+                <button class="btn btn-lg btn-secondary rounded-start-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- weather result -->
+          <div class="weather-result">
+            <div class="row">
+              <div class="col-lg-4  col-md-4 col-sm-12 p-0 mb-3 ">
+                <div class="card border-0 rounded-end-0 h-100">
+                  <div class="card-header rounded-end-0 text-white-50 d-flex justify-content-between" id="todayHeader">
+                  </div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-white-50 fw-bold" id="cityName"></h5>
+                    <p class="card-text big-txt text-white ps-3 d-flex justify-content-between" id="firstTemp"></p>
+                    <p class="ps-3" id="textFirst"></p>
+                    <div class="">
+                      <span id="spanOne" class="text-white-50 pe-4 "><img src="images/icon-umberella.png" alt="umberella"></span>
+                      <span id="spanTwo"class="text-white-50 pe-4 "><img src="images/icon-wind.png" alt="wind"></span>
+                      <span id="spanThree"class="text-white-50 pe-4 "><img src="images/icon-compass.png" alt="compass"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4  col-md-4  col-sm-12 p-0 mb-3 ">
+                <div class="card border-0 rounded-0 h-100 text-center">
+                  <div class="card-header  rounded-0 text-white-50 " id="tomorrowHeader"></div>
+                  <div class="card-body text-primary d-flex justify-content-center  ">
+                    <span class="card-title " id="iconTomorrow"></span>
+                    <p class="card-text fs-3 d-flex flex-column  " id="tomorrowContent"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4  col-md-4  col-sm-12 p-0 mb-3 ">
+                <div class="card border-0 rounded-start-0 h-100 text-center">
+                  <div class="card-header rounded-start-0 text-white-50" id="dayAfterTomorrowHeader"></div>
+                  <div class="card-body text-primary d-flex justify-content-center ">
+                    <span class="card-title " id="iconDayAfterTomorrow"></span>
+                    <p class="card-text fs-3 d-flex flex-column " id="dayAfterTomorrowContent"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container h-100">
+        <div class="row h-100 d-flex align-items-center justify-content-center">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="d-flex align-items-center justify-content-center  ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center">
+                  <input class="form-control form-control-lg  rounded-end-0 text-black" type="text" placeholder="enter your email to subscribe...." aria-label="form">
+                  <button class="btn btn-lg btn-danger rounded-start-0">Subscribe</button>
+                </div>
+                <div class="text-white-50 mx-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="text-center">
+              <i class="fa-brands fa-facebook fs-3 p-3 rounded-circle bg-black"></i>
+              <i class="fa-brands fa-twitter fs-3 p-3 rounded-circle bg-black"></i>
+              <i class="fa-brands fa-google-plus-g fs-3 p-3 rounded-circle bg-black"></i>
+              <i class="fa-brands fa-pinterest fs-3 p-3 rounded-circle bg-black"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </footer>
+    <!-- scripts -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
